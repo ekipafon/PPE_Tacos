@@ -1,0 +1,3 @@
+Pour pouvoir récupérer les données d'un panier
+client de pages en pages on utilise la méthode
+$_SESSION.

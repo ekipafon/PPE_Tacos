@@ -33,25 +33,17 @@
 			}
 			else
 			{
-				$page = "connexion";
+				$page = "accueil";
 			}
 
 			switch($page)
 			{
-				case "connexion" : 
+				case "accueil" : 
 
-					include("Pages/connexion/ConnexionController.php");
+					include("Pages/accueil/AccueilController.php");
 
-					$instanceController = new ConnexionController();
+					$instanceController = new AccueilController();
 					$instanceController->includeView();
-
-					if(!empty($_POST['login']) && !empty($_POST['password'])) 
-					{
-						if ($instanceController->authenticate($_POST['login'], $_POST['password']))
-						{
-							echo "reussi"; //$instanceController->redirectUser();
-						}
-					}
 
 					break;
 
