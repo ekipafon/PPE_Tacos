@@ -24,11 +24,17 @@ CREATE TABLE IF NOT EXISTS Panier
 
 CREATE TABLE IF NOT EXISTS Tacos 
 (
+<<<<<<< Updated upstream
 	idTacos INT(11) NOT NULL AUTO_INCREMENT,
 	taille  VARCHAR(64),
 	prixTacos INT(11),
 	idViande INT,
 	idSauce INT,
+=======
+	idTacos INT NOT NULL AUTO_INCREMENT,
+	taille VARCHAR,
+	prix INT,
+>>>>>>> Stashed changes
 	PRIMARY KEY (idTacos)
 );
 
