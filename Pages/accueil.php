@@ -1,7 +1,21 @@
-<?php
-
-    include_once("DAO/TacosDAO.php");
+<!DOCTYPE HTML>
+<html lang="fr">
     
-    echo't';
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/index.css" media="all">
+    </head>
     
-    #choix tacos getAllTacos
+    <body>
+        <div class="grid">
+            <div class="containerTaille">
+                
+                
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+    </body>

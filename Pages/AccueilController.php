@@ -1,12 +1,12 @@
 <?php
 
-include("DAO/.php");
+include("DAO/TacosDAO.php");
 
- class ConnexionController
+ class AccueilController
  {
     public function includeView()
     {
-        include("connexion.php");
+        include("accueil.php");
     }
 
     public function authenticate($identifiant, $mdp)

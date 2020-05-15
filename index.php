@@ -40,7 +40,7 @@
 			{
 				case "accueil" : 
 
-					include("Pages/accueil/AccueilController.php");
+					include("Pages/AccueilController.php");
 
 					$instanceController = new AccueilController();
 					$instanceController->includeView();
