@@ -8,20 +8,6 @@ include("DAO/TacosDAO.php");
     {
         include("accueil.php");
     }
-
-    public function authenticate($identifiant, $mdp)
-    {        
-        $chasseur = ChasseurDePrimeDAO::findChasseurWithMdpAndIdentifiant($identifiant, $mdp);
-        $connex=false;
-        
-        if($chasseur!=null)
-        {
-            $_SESSION["login"]=$identifiant;
-            $connex = true;
-        }
-        
-        return $connex;
-    }
     
     public function redirectUser()
     {
