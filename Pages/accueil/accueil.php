@@ -19,6 +19,10 @@
                 <div class="containerTaille-desc">
                     M : une viande et une sauce au choix → 5€
                     
+                    
+                </div>
+                <div class = buttonPanier>
+                <a class="bouton" href="Pages/boisson/boisson.php">Ajouter au panier</a>
                 </div>
                 
             </div>
@@ -31,9 +35,12 @@
                 </div>
                 <div class="containerTaille-desc">
                   L : deux viandes et deux sauces maximum → 7€
+                  
                     
                 </div>
-               
+                <div class = buttonPanier>
+                <a class="bouton" href="index.php?page=panier">Ajouter au panier</a>
+                </div>
                 
             </div>
             <div class="containerTaille">
@@ -47,13 +54,11 @@
                     XL : trois viandes et deux sauces maximum → 9€
                     
                 </div>
+                <div class = buttonPanier>
+                <a class="bouton" href="index.php?page=panier">Ajouter au panier</a>
+                </div>
                 
             </div>
         </div>
-        
-        
-        
-        
-        
-        
+
     </body>

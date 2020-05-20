@@ -1,0 +1,54 @@
+.html {
+    font-family: Century Gothic;
+    font-size: 14px;
+    height: 100%;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.buttonPanier
+{
+    display: flex;
+    justify-content: center;
+}
+
+.containerTaille {
+    font-family: Century Gothic;
+    display: inline-flex;
+    width: 200px;
+    margin: 1.66%;
+    flex-direction: column;
+    border-radius: 3px;
+    background: #fff;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.09)
+}
+
+.containerTaille-top {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    padding: 10px 10px 0 15px;
+}
+
+.containerTaille-bottom {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.image {
+    padding: 5px;
+    height: 150px;
+       
+}
+
+.containerTaille-desc {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    height: 100px;
+}
