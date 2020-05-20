@@ -2,8 +2,8 @@
 
 include("DAO/TacosDAO.php");
 
- class AccueilController
- {
+class AccueilController
+{
     public function includeView()
     {
         include("accueil.php");
@@ -11,7 +11,7 @@ include("DAO/TacosDAO.php");
     
     public function redirectUser()
     {
-        header('Location: login.php?page=viewAvis');  
+        header('Location: login.php?page=accueil');  
         exit;
     }
- }
+}

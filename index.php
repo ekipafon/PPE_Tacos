@@ -40,12 +40,19 @@
 			{
 				case "accueil" : 
 
-					include("Pages/AccueilController.php");
+					include("Pages/accueil/AccueilController.php");
 
 					$instanceController = new AccueilController();
 					$instanceController->includeView();
 
 					break;
+                                
+                                case "panier": 
+                                    
+                                        include("Pages/panier/PanierController.php");
+                                        
+                                        $panierController = new PanierController();
+                                        $panierController->includeViews();
 
 				default: 
 					break;
