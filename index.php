@@ -39,7 +39,7 @@
 
 			switch($page)
 			{
-				case "accueil" : 
+                                    case "accueil" : 
 
 					include("Pages/accueil/AccueilController.php");
 
@@ -48,6 +48,7 @@
 
 					break;
                                 
+<<<<<<< Updated upstream
                                 case "boisson" :
                                         
                                         include("Pages/boisson/BoissonController.php");
@@ -84,9 +85,17 @@
                                         
                                         $panierController = new PanierController();
                                         $panierController->includeView();
+=======
+                                    case "viandes": 
+>>>>>>> Stashed changes
 
-				default: 
-					break;
+                                            include("Pages/Viande/ViandeController.php");
+
+                                            $viandeController = new ViandeController();
+                                            $viandeController->includeViews();
+
+                                    default: 
+                                            break;
 			}
 
 	?>		

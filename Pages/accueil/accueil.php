@@ -21,7 +21,18 @@
                     
                     
                 </div>
+<<<<<<< Updated upstream
                
+=======
+                <div class = buttonPanier>
+<<<<<<< Updated upstream
+                <a class="bouton" href="Pages/boisson/boisson.php">Ajouter au panier</a>
+=======
+                <a class="bouton" href="index.php?page=viandes">Suivant</a>
+>>>>>>> Stashed changes
+                </div>
+                
+>>>>>>> Stashed changes
             </div>
             <div class="containerTaille">
                 <div class="containerTaille-top">
@@ -35,6 +46,17 @@
                   
                     
                 </div>
+<<<<<<< Updated upstream
+=======
+                <div class = buttonPanier>
+<<<<<<< Updated upstream
+                <a class="bouton" href="index.php?page=panier">Ajouter au panier</a>
+=======
+                <a class="bouton" href="index.php?page=viandes">Suivant</a>
+>>>>>>> Stashed changes
+                </div>
+                
+>>>>>>> Stashed changes
             </div>
                 
             
@@ -48,7 +70,19 @@
                 <div class="containerTaille-desc">
                     XL : trois viandes et deux sauces maximum → 9€
                     
+<<<<<<< Updated upstream
                 </div>                
+=======
+                </div>
+                <div class = buttonPanier>
+<<<<<<< Updated upstream
+                <a class="bouton" href="index.php?page=panier">Ajouter au panier</a>
+=======
+                <a class="bouton" href="index.php?page=viandes">Suivant</a>
+>>>>>>> Stashed changes
+                </div>
+                
+>>>>>>> Stashed changes
             </div>
         </div>
         
