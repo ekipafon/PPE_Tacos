@@ -1,8 +1,10 @@
 <?php
 
+
+
 include("DAO/BoissonDAO.php");
 
-class AccueilController
+class BoissonController
 {
     public function includeView()
     {

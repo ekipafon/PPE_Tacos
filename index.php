@@ -34,6 +34,7 @@
 			else
 			{
 				$page = "accueil";
+                                
 			}
 
 			switch($page)
@@ -47,12 +48,42 @@
 
 					break;
                                 
+                                case "boisson" :
+                                        
+                                        include("Pages/boisson/BoissonController.php");
+                                    
+                                        $boissonController = new BoissonController();
+                                        $boissonController->includeView();
+                                        
+                                        break;
+                                    
+                                    
+                                case "viande" :
+
+                                    include("Pages/viande/ViandeController.php");
+
+                                    $viandeController = new ViandeController();
+                                    $viandeController->includeView();
+
+                                    break;
+                                    
+                                
+                                case "sauce" :
+
+                                    include("Pages/sauce/SauceController.php");
+
+                                    $sauceController = new SauceController();
+                                    $sauceController->includeView();
+
+                                    break;
+                                    
+                                    
                                 case "panier": 
                                     
                                         include("Pages/panier/PanierController.php");
                                         
                                         $panierController = new PanierController();
-                                        $panierController->includeViews();
+                                        $panierController->includeView();
 
 				default: 
 					break;

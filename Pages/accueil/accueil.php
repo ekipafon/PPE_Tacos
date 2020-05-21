@@ -21,10 +21,7 @@
                     
                     
                 </div>
-                <div class = buttonPanier>
-                <a class="bouton" href="Pages/boisson/boisson.php">Ajouter au panier</a>
-                </div>
-                
+               
             </div>
             <div class="containerTaille">
                 <div class="containerTaille-top">
@@ -38,11 +35,9 @@
                   
                     
                 </div>
-                <div class = buttonPanier>
-                <a class="bouton" href="index.php?page=panier">Ajouter au panier</a>
-                </div>
-                
             </div>
+                
+            
             <div class="containerTaille">
                 <div class="containerTaille-top">
                     Taille XL
@@ -53,12 +48,17 @@
                 <div class="containerTaille-desc">
                     XL : trois viandes et deux sauces maximum → 9€
                     
-                </div>
-                <div class = buttonPanier>
-                <a class="bouton" href="index.php?page=panier">Ajouter au panier</a>
-                </div>
-                
+                </div>                
             </div>
         </div>
+        
+        
+                <div class = buttonPanier>
+                    <form method="POST" action="index.php?page=viande">
+                        <input type="text" id="taille" name="nom"/>
+                        <input type="submit" value="Valider"/>
+                    </form>
+                </div>
+
 
     </body>
