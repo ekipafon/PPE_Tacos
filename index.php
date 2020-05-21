@@ -48,7 +48,10 @@
 
 					break;
                                 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+>>>>>>> master
                                 case "boisson" :
                                         
                                         include("Pages/boisson/BoissonController.php");
@@ -85,9 +88,12 @@
                                         
                                         $panierController = new PanierController();
                                         $panierController->includeView();
+<<<<<<< HEAD
 =======
                                     case "viandes": 
 >>>>>>> Stashed changes
+=======
+>>>>>>> master
 
                                             include("Pages/Viande/ViandeController.php");
 

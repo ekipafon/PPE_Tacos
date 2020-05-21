@@ -8,7 +8,7 @@
      <body>
          
          <div class="enonce">
-             Tu as choisi un Tacos <?php echo htmlspecialchars($_POST["nom"]); if($_POST["nom"] == "M") { echo ", une viande au choix"; } else { echo ", deux viandes aux choix"; } ?>
+             Choisi la boisson de ton choix :
          </div>
         
         <div class="grid">

@@ -1,7 +1,5 @@
 <?php
 
-
-
 include("DAO/SauceDAO.php");
 
 class SauceController

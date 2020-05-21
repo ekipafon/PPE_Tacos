@@ -1,3 +1,32 @@
 Pour pouvoir récupérer les données d'un panier
 client de pages en pages on utilise la méthode
 $_SESSION.
+
+ Tu as choisi un Tacos 
+             <?php echo htmlspecialchars($_POST["nomViande[]"]); 
+             
+            if($_POST["nom"] == "M")
+                {
+                echo ", une viande au choix"; 
+                 
+                } 
+            elseif ($_POST["nom"] == "L") 
+                { 
+                echo ", deux viandes aux choix"; 
+                } 
+            else
+               {
+                echo ", trois viandes aux choix";
+                
+               }
+              
+            
+            if(isset($_POST['nomViande']))            
+            {
+                foreach($_POST['nomViande'] as $valeur)
+                {
+                    echo $valeur .", " ;
+                }
+                
+            }
+             ?>
