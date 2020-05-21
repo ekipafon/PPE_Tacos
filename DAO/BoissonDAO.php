@@ -1,7 +1,7 @@
 <?php
     include("DTO/BoissonDTO.php");
     
-    class BoissonDTO
+    class BoissonDAO
     {
         public static function getBoisson($idBoisson)
         {
