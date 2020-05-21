@@ -1,18 +1,31 @@
 <!DOCTYPE HTML>
 <html lang="fr">
-    
-    <head>
-        <link rel="stylesheet" type="text/css" href="css/boisson.css" media="all">
-    </head>
-    
-     <body>
+
+    <body style="background: #F8F8FF;">
          
-         <div class="enonce">
-<<<<<<< HEAD
-             Tu as choisi un Tacos <?php echo htmlspecialchars($_POST["nom"]); if($_POST["nom"] == "M") { echo ", une viande au choix"; } else { echo ", deux viandes aux choix"; } ?>
-=======
-             Choisi la boisson de ton choix :
->>>>>>> master
+          <div class="enonce" style="font-family: Century Gothic;justify-content: center;display: flex;">
+              <br>
+            Tacos taille <?php echo htmlspecialchars($_POST["nom"] . " avec ");
+            
+             if(isset($_POST['nomViande']))            
+            {
+                foreach($_POST['nomViande'] as $valeur)
+                {
+                    echo $valeur .", " ;
+                }  
+            }
+            
+             if(isset($_POST['nomSauce']))            
+            {
+                foreach($_POST['nomSauce'] as $valeur2)
+                {
+                    echo $valeur2 .", " ;
+                }
+                
+            }
+            
+            ?>
+
          </div>
         
         <div class="grid">
@@ -27,9 +40,7 @@
                 <div class="containerTaille-desc">
                     Canette de Coca Cola 33cl, +1€ 
                 </div>
-                <div class = buttonPanier>
-                <a class="bouton" href="index.php?page=panier">Ajouter au panier</a>
-                </div>
+
             </div>
             
              <div class="containerTaille">
@@ -42,9 +53,7 @@
                 <div class="containerTaille-desc">
                     Canette d'Ice Tea Peche 33cl, +1€ 
                 </div>
-                <div class = buttonPanier>
-                <a class="bouton" href="index.php?page=panier">Ajouter au panier</a>
-                </div>
+
             </div>
             
              <div class="containerTaille">
@@ -56,9 +65,6 @@
                 </div>
                 <div class="containerTaille-desc">
                     Canette de Sprite 33cl, +1€ 
-                </div>
-                <div class = buttonPanier>
-                <a class="bouton" href="index.php?page=panier">Ajouter au panier</a>
                 </div>
             </div>
             
@@ -72,9 +78,21 @@
                 <div class="containerTaille-desc">
                     Canette de Tropico 33cl, +1€ 
                 </div>
-                <div class = buttonPanier>
-                <a class="bouton" href="index.php?page=panier">Ajouter au panier</a>
-                </div>
+
             </div>
         </div>
+         
+        <div class = buttonPanier style="font-family: Century Gothic;">
+            <form method="POST" action="index.php?page=panier">
+                <input type="hidden" name="nom" value="<?php echo $_POST['nom']; ?>" />
+                <input type="radio" id="idBoisson" name="boisson" value="Coca"/> <label>Coca cola</label>
+                <input type="radio" id="idBoisson" name="boisson" value="IceTea"/><label>Ice Tea</label>
+                <input type="radio" id="idBoisson" name="boisson" value="Sprite"/><label>Sprite</label>
+                <input type="radio" id="idBoisson" name="boisson" value="Tropico"/><label>Tropico</label>
+                <input type="radio" id="idBoisson" name="boisson" value="Aucune"/><label>Aucune</label>
+                <input type="submit" value="Valider"/>
+            </form>
+        </div>
+         
+         
      </body>

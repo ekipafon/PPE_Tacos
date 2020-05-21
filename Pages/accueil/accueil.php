@@ -2,9 +2,6 @@
 <!DOCTYPE HTML>
 <html lang="fr">
     
-    <head>
-        <link rel="stylesheet" type="text/css" href="css/index.css" media="all">
-    </head>
     
     <body>
         
@@ -14,7 +11,7 @@
                     Taille M
                 </div>
                 <div class="containerTaille-bottom">
-                    <img class="image" src="Photos/test.png" alt>
+                    <img class="image" src="Photos/petittacos.png" alt>
                 </div>
                 <div class="containerTaille-desc">
                     M : une viande et une sauce au choix → 5€
@@ -22,11 +19,10 @@
                     
                 </div>
                
-<<<<<<< HEAD
-=======
+
               
                 
->>>>>>> master
+
             </div>
             <div class="containerTaille">
                 <div class="containerTaille-top">
@@ -40,12 +36,10 @@
                   
                     
                 </div>
-<<<<<<< HEAD
-=======
+
 
                
 
->>>>>>> master
             </div>
                 
             
@@ -54,30 +48,34 @@
                     Taille XL
                 </div>
                 <div class="containerTaille-bottom">
-                    <img class="image" src="Photos/test.png" alt>
+                    <img class="image" src="Photos/gigatacos.png" alt>
                 </div>
                 <div class="containerTaille-desc">
                     XL : trois viandes et deux sauces maximum → 9€
                     
-<<<<<<< HEAD
-=======
+
 
                 </div>                
 
                 </div>                
 
->>>>>>> master
+
                 </div>                
             </div>
         </div>
         
         
-                <div class = buttonPanier>
+                <div class = buttonPanier style="font-family: Century Gothic;">
                     <form method="POST" action="index.php?page=viande">
-                        <input type="text" id="taille" name="nom"/>
+                        <input type="radio" id="taille" name="nom" value="M"/> <label>M</label>
+                        <input type="radio" id="taille" name="nom" value="L"/><label>L</label>
+                        <input type="radio" id="taille" name="nom" value="XL"/><label>XL</label>
                         <input type="submit" value="Valider"/>
                     </form>
                 </div>
+        
+   
+                    
 
 
     </body>

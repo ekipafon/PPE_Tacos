@@ -1,13 +1,11 @@
 <!DOCTYPE HTML>
 <html lang="fr">
     
-    <head>
-        <link rel="stylesheet" type="text/css" href="css/index.css" media="all">
-    </head>
     
-    <body>
+    <body style="background: #F8F8FF;">
         
-        <div class="enonce">
+        <div class="enonce" style="font-family: Century Gothic;justify-content: center;display: flex;">
+             <br>
             Tu as choisi un Tacos <?php echo htmlspecialchars($_POST["nom"]); 
             if($_POST["nom"] == "M")
                 {
@@ -81,8 +79,9 @@
 
             </div>
         </div>
-            <div class = buttonPanier>
+            <div class = buttonPanier style="font-family: Century Gothic;">
                     <form method="POST" action="index.php?page=sauce">
+                        <input type="hidden" name="nom" value="<?php echo $_POST['nom']; ?>" />
                         <input type="checkbox" id="idViande" name="nomViande[]" value="kebab"/> <label>Kebab</label>
                         <input type="checkbox" id="idViande" name="nomViande[]" value="merguez"/><label>Merguez</label>
                         <input type="checkbox" id="idViande" name="nomViande[]" value="nuggets"/><label>Nuggets</label>

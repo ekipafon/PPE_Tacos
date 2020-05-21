@@ -8,19 +8,11 @@
 ?>
 
 
-<!DOCTYPE html>
-<html lang="fr">
-	<head>
-	
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="css/general.css" media="all"/>
-		<link rel="icon" type="image/png" href="images/icone.png"/>
+<?php
 
-		<meta charset="utf-8" />
-		<title>TACOS MARKET</title>		
-	</head>
-	<body>
-
+    include_once("Pages/header.php");
+?>
+	<body style="background: #F8F8FF;">
 
 		<div class="page-container">
 
@@ -48,13 +40,7 @@
 
 					break;
                                 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
->>>>>>> master
->>>>>>> master
+
                                 case "boisson" :
                                         
                                         include("Pages/boisson/BoissonController.php");
@@ -91,20 +77,7 @@
                                         
                                         $panierController = new PanierController();
                                         $panierController->includeView();
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-                                    case "viandes": 
->>>>>>> Stashed changes
-=======
->>>>>>> master
->>>>>>> master
 
-                                            include("Pages/Viande/ViandeController.php");
-
-                                            $viandeController = new ViandeController();
-                                            $viandeController->includeViews();
 
                                     default: 
                                             break;

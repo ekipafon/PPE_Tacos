@@ -1,8 +1,14 @@
 .html {
-    font-family: Century Gothic;
     font-size: 14px;
     height: 100%;
 }
+
+.body {
+    display: flex;
+    background: grey;
+    font-family: Century Gothic;
+}
+
 
 .grid {
     display: flex;
@@ -12,6 +18,8 @@
 
 .buttonPanier
 {
+    
+    font-family: Century Gothic;
     display: flex;
     justify-content: center;
 }
@@ -52,3 +60,4 @@
     padding: 10px;
     height: 100px;
 }
+

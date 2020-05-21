@@ -1,0 +1,23 @@
+.bandeau-top
+{
+    font-family: Century Gothic;
+    width: 100%;
+    height: 50px;
+    background: #FF9800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.bandeau-top img
+{
+    height: 30px;
+    margin-right: 5px;
+}
+
+.bandeau-top span
+{
+    color: #FFF;
+    font-weight: bold;
+    font-size: 25px;
+}

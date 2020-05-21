@@ -1,61 +1,55 @@
-<?php
-session_start();
-include_once("PanierController.php");
-
-echo '<?xml version="1.0" encoding="utf-8"?>';?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
-<head>
-<title>Votre panier</title>
-</head>
-<body>
-
-<form method="post" action="panier.php">
-<table style="width: 400px">
-    <tr>
-        <td colspan="4">Votre panier</td>
-    </tr>
-    <tr>
-        <td>Libellé</td>
-        <td>Quantité</td>
-        <td>Prix Unitaire</td>
-        <td>Action</td>
-    </tr>
-
-
-    <?php
-    if (creationPanier())
-    {
-        $nbArticles=count($_SESSION['panier']['libelleProduit']);
-        if ($nbArticles <= 0)
-        echo "<tr><td>Votre panier est vide </ td></tr>";
-        else
-        {
-            for ($i=0 ;$i < $nbArticles ; $i++)
+<!DOCTYPE HTML>
+<html lang="fr">
+    
+    
+    <body style="background: #F8F8FF;">
+        
+        <div class="enonce" style="font-family: Century Gothic;justify-content: center;display: flex;">
+         
+            <br>
+            Tu as un Tacos <?php echo htmlspecialchars($_POST["nom"]);?>
+            avec <?php echo htmlspecialchars($_POST["boisson"]);?>
+        <?php
+        
+            if(isset($_POST['nomViande']))            
             {
-                echo "<tr>";
-                echo "<td>".htmlspecialchars($_SESSION['panier']['libelleProduit'][$i])."</ td>";
-                echo "<td><input type=\"text\" size=\"4\" name=\"q[]\" value=\"".htmlspecialchars($_SESSION['panier']['qteProduit'][$i])."\"/></td>";
-                echo "<td>".htmlspecialchars($_SESSION['panier']['prixProduit'][$i])."</td>";
-                echo "<td><a href=\"".htmlspecialchars("panier.php?action=suppression&l=".rawurlencode($_SESSION['panier']['libelleProduit'][$i]))."\">XX</a></td>";
-                echo "</tr>";
+                foreach($_POST['nomViande'] as $valeur)
+                {
+                    echo $valeur .", " ;
+                }
+                
             }
-
-            echo "<tr><td colspan=\"2\"> </td>";
-            echo "<td colspan=\"2\">";
-            echo "Total : ".MontantGlobal();
-            echo "</td></tr>";
-
-            echo "<tr><td colspan=\"4\">";
-            echo "<input type=\"submit\" value=\"Rafraichir\"/>";
-            echo "<input type=\"hidden\" name=\"action\" value=\"refresh\"/>";
-
-            echo "</td></tr>";
-        }
-    }
-    ?>
-</table>
-</form>
-</body>
-</html>
-
+            
+            if($_POST["nom"] == "M" && $_POST["boisson"] == "Aucune")
+                {
+                echo ", 5€"; 
+                 
+                } 
+                
+            elseif ($_POST["nom"] == "M")
+                {
+                echo ", 6€";
+                }
+            elseif ($_POST["nom"] == "L" && $_POST["boisson"] == "Aucune") 
+                { 
+                echo ", 7€"; 
+                } 
+            elseif ($_POST["nom"] == "L") 
+                { 
+                echo ", 8€"; 
+                } 
+            elseif ($_POST["nom"] == "XL" && $_POST["boisson"] == "Aucune") 
+               {
+                echo ", 9€";
+               }
+            elseif ($_POST["nom"] == "XL") 
+               {
+                echo ", 10€";
+               }
+       ?>
+        </div>
+            <br>
+            <br>
+            <div class = buttonPanier style="font-family: Century Gothic;">
+                <input type="button" value="Payer">
+            </div>

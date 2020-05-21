@@ -1,7 +1,6 @@
-	DROP DATABASE IF EXISTS PPE_TACOS;
+DROP DATABASE IF EXISTS PPE_TACOS;
 
 CREATE DATABASE IF NOT EXISTS PPE_TACOS;
-CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 USE PPE_TACOS;
 
@@ -24,17 +23,11 @@ CREATE TABLE IF NOT EXISTS Panier
 
 CREATE TABLE IF NOT EXISTS Tacos 
 (
-<<<<<<< Updated upstream
 	idTacos INT(11) NOT NULL AUTO_INCREMENT,
 	taille  VARCHAR(64),
 	prixTacos INT(11),
 	idViande INT,
 	idSauce INT,
-=======
-	idTacos INT NOT NULL AUTO_INCREMENT,
-	taille VARCHAR,
-	prix INT,
->>>>>>> Stashed changes
 	PRIMARY KEY (idTacos)
 );
 
