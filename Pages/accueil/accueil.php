@@ -22,6 +22,11 @@
                     
                 </div>
                
+<<<<<<< HEAD
+=======
+              
+                
+>>>>>>> master
             </div>
             <div class="containerTaille">
                 <div class="containerTaille-top">
@@ -35,6 +40,12 @@
                   
                     
                 </div>
+<<<<<<< HEAD
+=======
+
+               
+
+>>>>>>> master
             </div>
                 
             
@@ -48,6 +59,14 @@
                 <div class="containerTaille-desc">
                     XL : trois viandes et deux sauces maximum → 9€
                     
+<<<<<<< HEAD
+=======
+
+                </div>                
+
+                </div>                
+
+>>>>>>> master
                 </div>                
             </div>
         </div>

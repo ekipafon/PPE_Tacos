@@ -1,7 +1,10 @@
 <?php
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> master
 include("DAO/SauceDAO.php");
 
 class SauceController
